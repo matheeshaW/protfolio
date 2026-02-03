@@ -139,8 +139,8 @@ export const siteData = {
       stack: ['Flutter', 'Firebase', 'Google Vision API'],
       description:
         'A sustainable fashion marketplace app featuring AI-based image recognition for clothing categorization.',
-      image: '/projects/project-placeholder.svg',
-      github: 'https://github.com/matheeshaW',
+      image: '/projects/swapwear.jpg',
+      github: 'https://github.com/matheeshaW/swapwear',
     },
   ],
   footerText: '© 2026 Matheesha Weerakoon. Built with React & Vite.',
