@@ -187,10 +187,11 @@
   margin-bottom: 1.4rem;
   overflow: hidden;
   border-right: 2px solid rgba(255, 255, 255, 0.6);
-  white-space: nowrap;
+  white-space: normal;
   display: inline-block;
   max-width: 100%;
-  animation: typing 3.2s steps(40, end) 0.3s both, blink 0.9s step-end infinite;
+  animation: none;
+  border-right: none;
 }
 
 .typewriter span {

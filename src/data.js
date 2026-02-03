@@ -24,7 +24,7 @@ export const siteData = {
   ],
   hero: {
     ctaPrimary: { label: 'View Work', href: '#projects' },
-    ctaSecondary: { label: 'Download CV', href: '/cv/cv.pdf' },
+    ctaSecondary: { label: 'Download CV', href: '/cv/W.M.M.B.-WEERAKOON-CV.pdf' },
     profileImage: '/profile/profilepic3.png',
   },
   skills: [
