@@ -43,7 +43,7 @@ npm run preview
 ```
 
 ## Content & Customization
-
+You can use this as a template if you want by simply editing the data.js file!
 All content lives in [src/data.js](src/data.js). Update your name, bio, skills, and projects there.
 
 ### Profile Image
@@ -53,7 +53,7 @@ All content lives in [src/data.js](src/data.js). Update your name, bio, skills, 
 
 ### Project Images
 
-- Placeholder: public/projects/project-placeholder.svg
+- Placeholder: public/projects/profilepic3.png
 - Add your images to public/projects and update each project `image` path in [src/data.js](src/data.js).
 
 ### CV
