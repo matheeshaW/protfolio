@@ -43,8 +43,12 @@ npm run preview
 ```
 
 ## Content & Customization
-You can use this as a template if you want by simply editing the data.js file!
+You can use this as a template if you want by simply editing the data.js file.
 All content lives in [src/data.js](src/data.js). Update your name, bio, skills, and projects there.
+
+### GitHub Pages base URL
+
+This project uses import.meta.env.BASE_URL for assets so they load correctly on GitHub Pages. Keep the base path updated in [vite.config.js](vite.config.js) if your repo name changes.
 
 ### Profile Image
 
@@ -53,12 +57,12 @@ All content lives in [src/data.js](src/data.js). Update your name, bio, skills, 
 
 ### Project Images
 
-- Placeholder: public/projects/profilepic3.png
-- Add your images to public/projects and update each project `image` path in [src/data.js](src/data.js).
+- Placeholder: public/projects/project-placeholder.svg
+- Add your images to public/projects and update each project image path in [src/data.js](src/data.js).
 
 ### CV
 
-- Place your CV at public/cv/cv.pdf (or update the path in [src/data.js](src/data.js)).
+- Place your CV at public/cv/W.M.M.B.-WEERAKOON-CV.pdf (or update the path in [src/data.js](src/data.js)).
 
 ### Favicon
 
