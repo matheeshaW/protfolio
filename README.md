@@ -48,7 +48,10 @@ All content lives in [src/data.js](src/data.js). Update your name, bio, skills, 
 
 ### GitHub Pages base URL
 
+view the page live on https://matheeshaw.github.io/portfolio/
+
 This project uses import.meta.env.BASE_URL for assets so they load correctly on GitHub Pages. Keep the base path updated in [vite.config.js](vite.config.js) if your repo name changes.
+
 
 ### Profile Image
 
