@@ -1,3 +1,5 @@
+const baseUrl = import.meta.env.BASE_URL
+
 export const siteData = {
   name: 'Matheesha Weerakoon',
   title: 'Software Engineering Undergraduate | Full Stack & Mobile Developer',
@@ -24,8 +26,11 @@ export const siteData = {
   ],
   hero: {
     ctaPrimary: { label: 'View Work', href: '#projects' },
-    ctaSecondary: { label: 'Download CV', href: '/cv/W.M.M.B.-WEERAKOON-CV.pdf' },
-    profileImage: '/profile/profilepic3.png',
+    ctaSecondary: {
+      label: 'Download CV',
+      href: `${baseUrl}cv/W.M.M.B.-WEERAKOON-CV.pdf`,
+    },
+    profileImage: `${baseUrl}profile/profilepic3.png`,
   },
   skills: [
     {
@@ -115,7 +120,7 @@ export const siteData = {
       stack: ['Laravel', 'React', 'MySQL', 'Tailwind CSS'],
       description:
         'A full-stack career guidance platform providing structured module-wise resources for engineering students.',
-      image: '/projects/project-placeholder.svg',
+      image: `${baseUrl}projects/project-placeholder.svg`,
       github: 'https://github.com/matheeshaW',
     },
     {
@@ -123,7 +128,7 @@ export const siteData = {
       stack: ['MongoDB', 'Express', 'React', 'Node'],
       description:
         'Comprehensive Inventory & Order Management system with financial reporting, automated invoicing, and payment gateways.',
-      image: '/projects/project-placeholder.svg',
+      image: `${baseUrl}projects/project-placeholder.svg`,
       github: 'https://github.com/matheeshaW',
     },
     {
@@ -131,7 +136,7 @@ export const siteData = {
       stack: ['Embedded Linux', 'Networking', 'Hardware Modding (UART/TTL)'],
       description:
         'Unlocked a Tozed ZLT S12 Pro by soldering a UART interface and booting the Linux kernel to RAM to bypass stock restrictions.',
-      image: '/projects/project-placeholder.svg',
+      image: `${baseUrl}projects/project-placeholder.svg`,
       github: 'https://github.com/matheeshaW',
     },
     {
@@ -139,7 +144,7 @@ export const siteData = {
       stack: ['Flutter', 'Firebase', 'Google Vision API'],
       description:
         'A sustainable fashion marketplace app featuring AI-based image recognition for clothing categorization.',
-      image: '/projects/swapwear.jpg',
+      image: `${baseUrl}projects/swapwear.jpg`,
       github: 'https://github.com/matheeshaW/swapwear',
     },
   ],
