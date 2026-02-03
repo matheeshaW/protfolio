@@ -1,16 +1,70 @@
-# React + Vite
+# Matheesha Weerakoon — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with React and Vite. It showcases skills, projects, and contact details with clean UI, smooth animations, and a mobile-first layout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive layout optimized for mobile and desktop
+- Animated hero section with glitch effect
+- Skills grouped by category with tech logos
+- Project cards with hover effects and tech stack badges
+- Contact section with a clean form layout
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- CSS (custom, no UI frameworks)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+Build for production:
+
+```
+npm run build
+```
+
+Preview the production build:
+
+```
+npm run preview
+```
+
+## Content & Customization
+
+All content lives in [src/data.js](src/data.js). Update your name, bio, skills, and projects there.
+
+### Profile Image
+
+- Placeholder: public/profile/profile-placeholder.svg
+- Replace with your image and update the path in [src/data.js](src/data.js) if needed.
+
+### Project Images
+
+- Placeholder: public/projects/project-placeholder.svg
+- Add your images to public/projects and update each project `image` path in [src/data.js](src/data.js).
+
+### CV
+
+- Place your CV at public/cv/cv.pdf (or update the path in [src/data.js](src/data.js)).
+
+### Favicon
+
+- Custom icon: public/mw.svg
+- Linked in [index.html](index.html).
+
+## License
+
+This project is for personal portfolio use.
