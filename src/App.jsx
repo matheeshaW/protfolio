@@ -10,6 +10,11 @@ import Footer from './components/Footer'
 function App() {
   useEffect(() => {
     const elements = document.querySelectorAll('.reveal')
+    if (!('IntersectionObserver' in window)) {
+      elements.forEach((element) => element.classList.add('is-visible'))
+      return undefined
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,12 +23,19 @@ function App() {
           }
         })
       },
-      { threshold: 0.2 }
+      { threshold: 0.1, rootMargin: '0px 0px -10% 0px' }
     )
 
     elements.forEach((element) => observer.observe(element))
 
-    return () => observer.disconnect()
+    const fallbackTimer = window.setTimeout(() => {
+      elements.forEach((element) => element.classList.add('is-visible'))
+    }, 1200)
+
+    return () => {
+      observer.disconnect()
+      window.clearTimeout(fallbackTimer)
+    }
   }, [])
 
   return (
